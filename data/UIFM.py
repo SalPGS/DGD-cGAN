@@ -1,6 +1,6 @@
 """
- > Underwater image formation process
- Save all image pairs with the same name in different folders
+Underwater image formation process
+Save all image pairs with the same name in different folders
 ""
 #Libraries
 import os
