@@ -8,7 +8,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 #Folder with the images
-input_path = "E:\\My_Python\\GAN\\TURBID\\TESTfrontView"
+input_path = "/your/folder"
 os.chdir(input_path)
 
 
