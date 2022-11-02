@@ -1,5 +1,6 @@
 """
  > Split the image into four equal sizes  
+ > Download Turbid dataset http://amandaduarte.com.br/turbid/
 """
 #Libraries
 import os
