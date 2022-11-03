@@ -16,6 +16,7 @@ import itertools
 import random
 
 #local libraries
+from data.datasets import load_data
 from nets.networks_Dgd import ResUnet1, ResUnet2, PatchDiscriminator
 from nets.losses import GANLoss, init_weights
 from nets.utils import grid_output, loss_results, create_loss_meters, update_losses
