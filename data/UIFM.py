@@ -13,13 +13,13 @@ from skimage.color import rgb2lab, lab2rgb
 import glob
 
 def Gray_world(image): 
-    '''
+'''
     Calculates the airlight with gray world assumption dividing each colour channel R, G, B by its average value.
     img: image image
     r: red channel
     g: green channel
     b: blue channel
-    '''
+'''
     img = image
 
     r = img[:,:,0]
