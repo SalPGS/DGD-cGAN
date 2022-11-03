@@ -73,26 +73,112 @@ def Air_light(img, ar,ag,ab):
     return matrix_size
 
   
-#Save images  
+
 '''
-This for loop will apply the above functions to the images inside the folder and save it in another one
+This for loop will apply the above functions to the images inside and save their airlight pair
 '''
 
 #Folder with images
-input_folder = "/your/folder"
-#Folder were there resized images will be stored
-output_airlight = "/your/folder"
+input_folder = "/your/same_folder"
+#Folder were there airlight images will be stored here using the same name.jpg you can change it modifying image_name variable
+output_airlight = "/your/same_folder"
 
 os.chdir(input_folder)
-#Counter d 
-d=1
+
 for img in os.listdir():
     underwater_image = Image.open(img)
+    #underwater_image = underwater_image.resize((256, 256))
     ui_matrix = np.array(underwater_image).astype("float64")
     gw_image, r_gray, gr_gray, b_gray = Gray_world(image=ui_matrix)
     al = Air_light(img=ui_matrix, ar=r_gray, ag=gr_gray,ab= b_gray)
-    image_name = (img.split('.')[-2] +'%d.jpg'%d)
+    #image_name = (img.split('.')[-2] +'%d.jpg'%d)
+    image_name = (img.split('.')[-2]+'.jpg') #image's original name
     file_path = os.path.join(output_airlight,image_name)
     al_image = Image.fromarray(al, 'RGB')
+    al_image = al_image.resize((1807, 1355))
     al_image.save(file_path)
+   
+
+
+#Maximum intensity ground truth in the paper we did not use it but it is optional
+def Ground_truth(J):
+    '''
+    Function that calculates the maximum value of the ground truth image
+    Parameters:
+        J: underwater image matrix
+        r,g,b channels
+    Returns:
+        The J matrix with the r, g ,b  maximum values
+    '''
+    #r, g, b channels
+    r = J[:,:,0]
+    g = J[:,:,1]
+    b = J[:,:,2]
+    
+
+    # maximum value of each channel
+    r_max = np.max(r)
+    g_max = np.max(g)
+    b_max = np.max(b)
+
+    # filling matrix with rgb maximum values
+    J[:,:,0] = r_max
+    J[:,:,1] = g_max
+    J[:,:,2] = b_max
+
+
+    return J
+   
+#Transmission   
+def Transmission(I, A, J):
+    '''
+    Function for returning the transmission of light in the underwatre image
+    Folowing equation T = I-A/J-A
+
+    Parameters:
+        I: is the image image ui_matrix
+        A: is airlight which is al function 
+        J: is the ground truth image 
+    Returns:
+        Matrix with the transmission of light
+    '''
+
+    T = (I-A) / (J-A)
+    
+    #thos works T = (I-A)/(255-A)
+
+    return T
+    
+   
+   
+   
+'''
+This for loop will apply the above functions to the images inside the folder and save it in another one
+Remeber to check all the images with the same name.jpg for create the paired data
+'''
+
+input_folder2 = "/your/ underwater images folder"
+under_path=  glob.glob(input_folder2 + "\\*.jpg") # Grabbing all the image file names
+input_folder3 = f"/your/ ground truth images folder"
+groundtruth_path = glob.glob(input_folder3 + "\\*.jpg")
+output_transmission = "E:\\My_Python\\GAN\\TURBID\\Test2"
+
+os.chdir(input_folder2)
+#Counter d 
+d=1
+#for img2 in os.listdir():
+for img2, img3 in zip(under_path, groundtruth_path):
+    underwater_image = Image.open(img2)
+    g_truth = Image.open(img3)    
+    ui_matrix = np.array(underwater_image).astype("float64")
+    gt_matrix = np.array(g_truth).astype("float64")
+    
+    al = Air_light(img = ui_matrix, ar = r_gray, ag = gr_gray, ab = b_gray)
+    gt_matrix = np.array(g_truth).astype("float64")
+    #j_max = Ground_truth(J=gt_matrix) #for use maximum intensity set J to j_max
+    tran = Transmission(I = ui_matrix, A = al, J = gt_matrix)
+    image_name2 = (img.split('.')[-2] +'%d.jpg'%d)
+    file_path2 = os.path.join(output_transmission,image_name2)
+    tran_image = Image.fromarray(tran, 'RGB')
+    tran_image.save(file_path2)
     d+=1
