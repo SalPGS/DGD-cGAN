@@ -44,39 +44,6 @@ def update_losses(model, loss_meter_dict, count):
         loss_meter.update(loss.item(), count=count) 
 
 
-
-# Display images    
-def grid_output(model, data):
-    model.G1.eval()
-    with torch.no_grad():
-        model.set_input(data)
-        model.forward()
-    model.G1.train()
-    fake_dewater = model.fake_dewater.detach()
-    groun_truth = model.Gt
-    Uw = model.Uw.cpu().numpy()
-    Uw = np.transpose(Uw,(0,2,3,1))
-
-    fake_imgs= fake_dewater.cpu().numpy()
-    fake_imgs = np.transpose(fake_imgs,(0,2,3,1))
-
-    real_imgs= groun_truth.cpu().numpy()
-    real_imgs = np.transpose(real_imgs,(0,2,3,1))
-
-    fig = plt.figure(figsize=(15, 8))
-
-    for i in range(5):
-        ax = plt.subplot(3, 5, i + 1)
-        ax.imshow(Uw[i])
-        ax.axis("off")
-        ax = plt.subplot(3, 5, i + 1 + 5)
-        ax.imshow(fake_imgs[i])
-        ax.axis("off")
-        ax = plt.subplot(3, 5, i + 1 + 10)
-        ax.imshow(real_imgs[i])
-        ax.axis("off")
-    plt.show()
-
         
 def loss_results(loss_meter_dict):
     for loss_name, loss_meter in loss_meter_dict.items():
