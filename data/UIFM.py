@@ -1,7 +1,7 @@
 """
-Underwater image formation process
-Save all image pairs with the same name in different folders
-""
+Underwater Image formation model for estimating the airlight and transmission
+
+"""
 #Libraries
 import os
 import numpy as np
