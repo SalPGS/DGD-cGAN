@@ -125,7 +125,7 @@ def train_model(model, train_data, epochs, display_every=16):
                 print(f"\nEpoch {e+1}/{epochs}")
                 print(f"Iteration {i}/{len(train_data)}")
                 loss_results(loss_meter_dict) 
-                grid_output(model, data)
+                
         
 
 model = DGD_cGAN()
