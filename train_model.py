@@ -19,7 +19,7 @@ import random
 from data.datasets import load_data
 from nets.networks_Dgd import ResUnet1, ResUnet2, PatchDiscriminator
 from nets.losses import GANLoss, init_weights
-from nets.utils import grid_output, loss_results, create_loss_meters, update_losses
+from nets.utils import loss_results, create_loss_meters, update_losses
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
