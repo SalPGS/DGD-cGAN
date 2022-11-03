@@ -1,3 +1,28 @@
+"""
+Training DGD-cGAN
+"""
+#Libraries
+import os
+import glob
+import numpy as np
+from PIL import Image
+from tqdm.notebook import tqdm
+import matplotlib.pyplot as plt
+import torch
+from torch import nn, optim
+from torchvision import transforms
+from torch.utils.data import Dataset, DataLoader
+import itertools
+import random
+
+#local libraries
+from nets.networks_Dgd import ResUnet1, ResUnet2, PatchDiscriminator
+from nets.losses import GANLoss, init_weights
+from nets.utils import grid_output, loss_results, create_loss_meters, update_losses
+
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 #Datasets
 train_data = load_data( path_under= train_path_underwater, path_gt=train_path_gt, path_air=train_path_airlight, path_trans=train_path_transmission, split='train')
 test_data = load_data(path_under= test_paths_underwater, path_gt=test_path_gt, path_air=test_paths_airlight, path_trans=test_paths_transmission, split='test')
