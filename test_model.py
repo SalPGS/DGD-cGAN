@@ -11,7 +11,7 @@ from torch import nn, optim
 from torchvision import transforms
 from torchvision.utils import save_image
 from torch.autograd import Variable
-
+from nets.networks_Dgd import ResUnet1, ResUnet2, PatchDiscriminator
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 Tensor = torch.cuda.FloatTensor if device else torch.FloatTensor 
