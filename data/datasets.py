@@ -15,13 +15,13 @@ import itertools
 
 
 #Datasets
-groundtruth = "E:\\My_Python\\GAN\\GAN_VS\\DewaterGan\\data\\turbid\\ground_truth" # 324 ground truth images from Turbid dataset
+groundtruth = "\ground_truth\" 
 path_gt = glob.glob(groundtruth + "\\*.jpg") # Grabbing all the image file names
-underwater = "E:\\My_Python\\GAN\\GAN_VS\\DewaterGan\\data\\turbid\\underwater" # 324 underwater images from turbid dataset
+underwater = "\underwater_images\" 
 path_underwater = glob.glob(underwater + "\\*.jpg") # Grabbing all the image file names
-airlight = "E:\\My_Python\\GAN\\GAN_VS\\DewaterGan\\data\\turbid\\airlight" #324 images with the airlight
+airlight = "\airlight_images\"  #324 images with the airlight
 path_airlight = glob.glob(airlight + "\\*.jpg") # Grabbing all the image file names
-transmission = "E:\\My_Python\\GAN\\GAN_VS\\DewaterGan\\data\\turbid\\transmission" #324 images with the transmission
+transmission = "\transmission_images\"  #324 images with the transmission
 path_transmission = glob.glob(transmission + "\\*.jpg")
 
 
