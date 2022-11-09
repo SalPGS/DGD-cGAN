@@ -1,4 +1,4 @@
-Pytorch implementation of the paper DGD-cGAN: A Dual Generator for Image Dewatering and Restoration
+Pytorch implementation of the paper _"DGD-cGAN: A Dual Generator for Image Dewatering and Restoration"_
 <ul>
   <li> Paper: </li>
   <li> Preprint:</li>
