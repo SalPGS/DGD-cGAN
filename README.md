@@ -11,6 +11,8 @@ This repository contains Pytorch implementation of the paper **"DGD-cGAN: A Dual
 We used TURBID dataset from Duarte et al.[<a href="http://amandaduarte.com.br/turbid/Turbid_Dataset.pdf" target="_blank">1</a>] available <a href="http://amandaduarte.com.br/turbid/ " target="_blank"> here </a>.
 We provide the TURBID images split into four equal sizes. The train data is available for download <a href="https://drive.google.com/file/d/13yxI85JUdsbplM7-Hh8sywIXoom-6hZu/view?usp=sharing" target="_blank"> Ground Truth </a> and <a href="https://drive.google.com/file/d/1XZesr1UCuxnp0gQ3k5tESQd7tkHvCm6t/view?usp=sharing" target="_blank"> Underwater </a> images. Test data is available inside the data folder: [Ground Truth](data/Test_groundtruth.zip) and [Underwater](data/Test_underwater.zip).
 
+(<-- two spaces)
+
 ###### Representative results
   
 <p align="float">
@@ -25,7 +27,7 @@ We provide the TURBID images split into four equal sizes. The train data is avai
 </p>
 
 
-
+(<-- two spaces)
 DGD-cGAN architecture
 
 ![](docs/fig1.png)
