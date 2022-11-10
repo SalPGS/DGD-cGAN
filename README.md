@@ -25,7 +25,7 @@ We provide the TURBID images split into four equal sizes. The train data is avai
   <img src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/UGAN_l2_3deepblue_31_24.jpg" width=122 height=122 max-width=50%>
   <img src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/DGD_GAN_l2_3deepblue_31_24.jpg" width=122 height=122 max-width=50%>
 <div width=122px height=122px max-width=50%>Underwater Img.</div>
-<p width=122px height=122px max-width=50%>Ground truth.</p>
+<div width=122px height=122px max-width=50%>Ground truth.</div>
 <p width=122px height=122px max-width=50%>CLAHE.</p>
 <p width=122px height=122px max-width=50%>Retinex</p>
 <p width=122px height=122px max-width=50%>FUnIE-GAN.</p>
