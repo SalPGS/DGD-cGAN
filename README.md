@@ -11,5 +11,5 @@ We provide the TURBID images split into four equal sizes. The train data is avai
 
 DGD-cGAN architecture
 
-(DGD-cGAN/docs/fig1.png)
+![This is an image](DGD-cGAN/docs/fig1.png)
    
