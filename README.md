@@ -13,6 +13,9 @@ We provide the TURBID images split into four equal sizes. The train data is avai
 
 ###### Representative results
 
+<p align="center">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
 
 
 
