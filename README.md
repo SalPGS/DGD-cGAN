@@ -15,7 +15,7 @@ We provide the TURBID images split into four equal sizes. The train data is avai
 
 | Underwater Img. | Second Header |
 | ------------- | ------------- |
-| (docs/fig1.png)  | (docs/fig1.png)  |
+| ![](docs/fig1.png) | ![](docs/fig1.png) |
 | Content Cell  | Content Cell  |
 
 DGD-cGAN architecture
