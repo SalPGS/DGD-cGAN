@@ -14,7 +14,7 @@ We provide the TURBID images split into four equal sizes. The train data is avai
 ###### Representative results
 
 <p align="float">
-  <img src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/UNDERWATER_l2_3deepblue_31_24.jpg" width=128 height=128 max-width=50%>
+  <img src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/UNDERWATER_l2_3deepblue_31_24.jpg" width=124 height=124 max-width=50%>
   <img src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/GROUND_TRUTH_l2_3deepblue_31_24.jpg" width=128 height=128 max-width=50%>
   <img src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/CLAHE_l2_3deepblue_31_24.jpg" width=128 height=128 max-width=50%>
   <img src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/RETINEX_l2_3deepblue_31_24.jpg" width=128 height=128 max-width=50%>
