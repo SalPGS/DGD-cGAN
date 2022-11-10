@@ -12,11 +12,13 @@ We used TURBID dataset from Duarte et al.[<a href="http://amandaduarte.com.br/tu
 We provide the TURBID images split into four equal sizes. The train data is available for download <a href="https://drive.google.com/file/d/13yxI85JUdsbplM7-Hh8sywIXoom-6hZu/view?usp=sharing" target="_blank"> Ground Truth </a> and <a href="https://drive.google.com/file/d/1XZesr1UCuxnp0gQ3k5tESQd7tkHvCm6t/view?usp=sharing" target="_blank"> Underwater </a> images. Test data is available inside the data folder: [Ground Truth](data/Test_groundtruth.zip) and [Underwater](data/Test_underwater.zip).
 
 ###### Representative results
+<style>
 .imgs-1 {
   background-color: blue; 
   height: 50px;
   width: 50px;
 }
+</style>  
 <p align="float">
   <img class="imgs-1" src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/UNDERWATER_l2_3deepblue_31_24.jpg" max-width=50%>
   <img src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/GROUND_TRUTH_l2_3deepblue_31_24.jpg" width=128 height=128 max-width=50%>
