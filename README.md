@@ -30,6 +30,8 @@ We provide the TURBID images split into four equal sizes. The train data is avai
 <br/>
 <br/>
 ###### DGD-cGAN architecture
+
+
 <img align="centre" src="https://github.com/SalPGS/DGD-cGAN/blob/edc60bc89f7738724a6907a689f28517ddeb8b3b/docs/fig1.png" width=908.5 height=562.5 max-width=50%>
 
    
