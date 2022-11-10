@@ -1,3 +1,5 @@
+## DGD-cGAN: A Dual Generator for Image Dewatering and Restoration
+
 This repository contains Pytorch implementation of the paper **"DGD-cGAN: A Dual Generator for Image Dewatering and Restoration"**.
 <ul>
   <li> Paper: </li>
