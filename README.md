@@ -15,7 +15,7 @@ We provide the TURBID images split into four equal sizes. The train data is avai
 
 | Underwater Img. | CLAHE | RETINEX |FUnIE-GAN|Water-Net|UGAN|DGD-cGAN|
 | ------------- | ------------- | ------------- | ------------- |------------- | ------------- |
-| ![](docs/fig1.png) | ![](imgs/CLAHE_l2_3deepblue_31_24.jpg) | ![]imgs/RETINEX_l2_3deepblue_31_24.jpg|![]imgs/FUNIE_GAN_l2_3deepblue_31_24.jpg|![]imgs/WATER_NET_l2_3deepblue_31_24.jpg|![]imgs/UGAN_l2_3deepblue_31_24.jpg|![]imgs/DGD_GAN_l2_3deepblue_31_24.jpg|
+| ![](imgs/CLAHE_l2_3deepblue_31_24.jpg) | ![](imgs/CLAHE_l2_3deepblue_31_24.jpg) | ![]imgs/RETINEX_l2_3deepblue_31_24.jpg|![]imgs/FUNIE_GAN_l2_3deepblue_31_24.jpg|![]imgs/WATER_NET_l2_3deepblue_31_24.jpg|![]imgs/UGAN_l2_3deepblue_31_24.jpg|![]imgs/DGD_GAN_l2_3deepblue_31_24.jpg|
 
 
 DGD-cGAN architecture
