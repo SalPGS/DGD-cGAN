@@ -25,9 +25,11 @@ We provide the TURBID images split into four equal sizes. The train data is avai
   <img src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/WATER_NET_l2_3deepblue_31_24.jpg" width=122 height=122 max-width=50%>
   <img src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/UGAN_l2_3deepblue_31_24.jpg" width=122 height=122 max-width=50%>
   <img src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/DGD_GAN_l2_3deepblue_31_24.jpg" width=122 height=122 max-width=50%>
+<p/>  
 <br/>
-
-DGD-cGAN architecture
-<img src="https://github.com/SalPGS/DGD-cGAN/blob/edc60bc89f7738724a6907a689f28517ddeb8b3b/docs/fig1.png" width=908.5 height=562.5 max-width=50%>
+<br/>
+<br/>
+###### DGD-cGAN architecture
+<img align="centre" src="https://github.com/SalPGS/DGD-cGAN/blob/edc60bc89f7738724a6907a689f28517ddeb8b3b/docs/fig1.png" width=908.5 height=562.5 max-width=50%>
 
    
