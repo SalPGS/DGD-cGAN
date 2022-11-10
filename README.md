@@ -14,7 +14,11 @@ We provide the TURBID images split into four equal sizes. The train data is avai
 <br/>
 
 ###### Representative results
-  
+
+| First Header  | Second Header |
+|-------------|-------------|
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 <p align="float">
   <img class="imgs-1" src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/UNDERWATER_l2_3deepblue_31_24.jpg" width=122 height=122 max-width=50%>
   <img src="https://github.com/SalPGS/DGD-cGAN/blob/8ededbb74900ddf1af11a01dd951696dd23b5ac5/docs/imgs/GROUND_TRUTH_l2_3deepblue_31_24.jpg" width=122 height=122 max-width=50%>
