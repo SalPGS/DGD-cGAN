@@ -22,3 +22,4 @@ DGD-cGAN architecture
 
 ![](docs/fig1.png)
    
+![](imgs/CLAHE_l2_3deepblue_31_24.jpg)
