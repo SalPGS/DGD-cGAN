@@ -5,7 +5,8 @@ This repository contains Pytorch implementation of the paper **"DGD-cGAN: A Dual
   <li> Paper: </li>
   <li> Preprint:</li>
       </ul>
-<br/>
+<br>
+
 ###### Abstract
 Underwater images are usually covered with a blue-greenish colour cast, making them distorted,
 blurry or low in contrast. This phenomenon occurs due to the light attenuation given by the scattering
