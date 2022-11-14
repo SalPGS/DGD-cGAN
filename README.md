@@ -21,19 +21,22 @@ loss function based upon the transmission and the veiling light components of th
 model. Our experiments show that DGD-cGAN consistently delivers a margin of improvement as
 compared with the state-of-the-art methods on several widely available datasets.
       
+<br>
+
 ###### Data preparation  
 We used TURBID dataset from Duarte et al.[<a href="http://amandaduarte.com.br/turbid/Turbid_Dataset.pdf" target="_blank">1</a>] available <a href="http://amandaduarte.com.br/turbid/ " target="_blank"> here </a>.
 We provide the TURBID images split into four equal sizes. The train data is available for download <a href="https://drive.google.com/file/d/13yxI85JUdsbplM7-Hh8sywIXoom-6hZu/view?usp=sharing" target="_blank"> Ground Truth </a> and <a href="https://drive.google.com/file/d/1XZesr1UCuxnp0gQ3k5tESQd7tkHvCm6t/view?usp=sharing" target="_blank"> Underwater </a> images. Test data is available inside the data folder: [Ground Truth](data/Test_groundtruth.zip) and [Underwater](data/Test_underwater.zip).
 
-<br/>
+<br>
 
 ###### DGD-cGAN architecture
 
 <img align="centre" src="https://github.com/SalPGS/DGD-cGAN/blob/edc60bc89f7738724a6907a689f28517ddeb8b3b/docs/fig1.png">
 
-<br/>
+<br>
 
 ###### Representative results
+
 
 | Image Input | Ground truth | CLAHE | RETINEX | FUnIE-GAN | Water-Net | UGAN | DGD-cGAN | 
 |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |          
