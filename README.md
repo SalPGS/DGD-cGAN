@@ -5,7 +5,20 @@ This repository contains Pytorch implementation of the paper **"DGD-cGAN: A Dual
   <li> Paper: </li>
   <li> Preprint:</li>
       </ul>
-      
+<br/>
+###### Abstract
+Underwater images are usually covered with a blue-greenish colour cast, making them distorted,
+blurry or low in contrast. This phenomenon occurs due to the light attenuation given by the scattering
+and absorption in the water column. In this paper, we present an image enhancement approach for
+dewatering which employs a conditional generative adversarial network (cGAN) with two generators.
+Our Dual Generator Dewatering cGAN (DGD-cGAN) removes the haze and colour cast induced
+by the water column and restores the true colours of underwater scenes whereby the effects of
+various attenuation and scattering phenomena that occur in underwater images are tackled by the two
+generators. The first generator takes at input the underwater image and predicts the dewatered scene,
+while the second generator learns the underwater image formation process by implementing a custom
+loss function based upon the transmission and the veiling light components of the image formation
+model. Our experiments show that DGD-cGAN consistently delivers a margin of improvement as
+compared with the state-of-the-art methods on several widely available datasets.
       
 ###### Data preparation  
 We used TURBID dataset from Duarte et al.[<a href="http://amandaduarte.com.br/turbid/Turbid_Dataset.pdf" target="_blank">1</a>] available <a href="http://amandaduarte.com.br/turbid/ " target="_blank"> here </a>.
