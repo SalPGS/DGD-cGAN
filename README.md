@@ -37,6 +37,7 @@ We provide the TURBID images split into four equal sizes. The data is available 
 
 ###### Representative results
 
+We compare DGD-cGAN, with Contrast Limited Adaptive Histogram Equalisation (CLAHE), Retinex, FUnIE-GAN, Water-Net and UGAN methods.
 
 | Image Input | Ground truth | CLAHE | RETINEX | FUnIE-GAN | Water-Net | UGAN | DGD-cGAN | 
 |     :---:      |     :---:      |     :---:      |     :---:      |     :---:     |     :---:      |     :---:      |     :---:      |          
