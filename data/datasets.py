@@ -3,7 +3,7 @@ Training DGD-cGAN
 """
 #Libraries
 import os
-import glob
+from glob import glob
 import numpy as np
 from PIL import Image
 import torch
@@ -16,13 +16,13 @@ import itertools
 
 #Datasets
 groundtruth = "\ground_truth\" 
-path_gt = glob.glob(groundtruth + "\\*.jpg") # Grabbing all the image file names
+path_gt = glob(groundtruth + "\\*.jpg") # Grabbing all the image file names
 underwater = "\underwater_images\" 
-path_underwater = glob.glob(underwater + "\\*.jpg") # Grabbing all the image file names
+path_underwater = glob(underwater + "\\*.jpg") # Grabbing all the image file names
 airlight = "\airlight_images\"  #324 images with the airlight
-path_airlight = glob.glob(airlight + "\\*.jpg") # Grabbing all the image file names
+path_airlight = glob(airlight + "\\*.jpg") # Grabbing all the image file names
 transmission = "\transmission_images\"  #324 images with the transmission
-path_transmission = glob.glob(transmission + "\\*.jpg")
+path_transmission = glob(transmission + "\\*.jpg")
 
 
 # Seed
