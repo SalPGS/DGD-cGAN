@@ -31,7 +31,7 @@ test_data = load_data(path_under= test_paths_underwater, path_gt=test_path_gt, p
 
 
 class DGD_cGAN(nn.Module):
-    def __init__(self, device=device, lr_Gens= 0.00009 , lr_D= 0.0001, 
+    def __init__(self, device=device, lr_Gens= 0.0002 , lr_D= 0.0002, 
                  beta1=0.5, beta2=0.999, lamb_G1=100.0, lamb_G2=0.5):
         super().__init__()
         
