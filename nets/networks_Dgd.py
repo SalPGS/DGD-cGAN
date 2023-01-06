@@ -144,7 +144,7 @@ class ResUnet2(nn.Module):
         self.dec1 = decoder2(512, 256)
         self.dec2 = decoder2(256, 128)
         self.dec3 = decoder2(128, 64)
-        self.output = nn.Conv2d(64, 3, kernel_size=1, padding=0)
+        self.output = nn.Conv2d(64, 6, kernel_size=1, padding=0)
         self.sigmoid = nn.Sigmoid()
 
     def forward(self, inputs):
