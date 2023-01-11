@@ -20,6 +20,8 @@ G1 = ResUnet1().to(device)
 G2 = ResUnet2().to(device)
 D = PatchDiscriminator(in_c=3, num_filters=64, n_down=3).to(device)
 
+
+# Contains the model weights https://drive.google.com/file/d/1paEJmo5q0fSkCpfJIHCdcoyUGyB3flfv/view?usp=sharing
 #Load state dic
 G1.load_state_dict(torch.load(f'G_dgdgan_epoch_850.pth', map_location=device))
 G2.load_state_dict(torch.load(f'G2_dgdgan_epoch_850.pth', map_location=device))
