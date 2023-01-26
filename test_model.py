@@ -61,4 +61,4 @@ for img in img_folder:
     d+=1
     
 if (len(times) > 1):
-    print ("\nTotal imgs: %d" % len(img_folder)) 
+    print ("Total imgs: %d" % len(img_folder)) 
