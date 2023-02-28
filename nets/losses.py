@@ -28,7 +28,7 @@ class GANLoss(nn.Module):
 
 #Weights
 
-def weights(net, init='weight', gain=0.02):
+def weights(net, init='norm', gain=0.02):
     # Normal distribution to initalize weights(mean, std)
     def init_func(m):
         classname = m.__class__.__name__
