@@ -76,8 +76,8 @@ class DGD_cGAN(nn.Module):
         fake_img= self.fake_dewater
         fake_pred = self.D(fake_img)
         self.G_Loss = self.Adv_Loss(fake_pred, True)
-        self.G2_A = self.fake_G2[:, [0,1,2]]
-        self.G2_T = self.fake_G2[:, [3,4,5]]
+        self.G2_A = self.fake_G2[:, 0:3]
+        self.G2_T = self.fake_G2[:, 3:6]
 
         self.fake_N = (self.fake_dewater * self.G2_T) + self.G2_A
         
