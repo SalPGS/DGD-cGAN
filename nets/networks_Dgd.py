@@ -134,10 +134,10 @@ class decoder2(nn.Module):
 class ResUnet2(nn.Module):
     def __init__(self):
         super().__init__()
-        self.conv1 = nn.Conv2d(3, 64, kernel_size=3, padding=1)
+        self.conv1 = nn.Conv2d(6, 64, kernel_size=3, padding=1)
         self.batch1 = batchnorm_2(64)
         self.conv2 = nn.Conv2d(64, 64, kernel_size=3, padding=1)
-        self.conv3 = nn.Conv2d(3, 64, kernel_size=1, padding=0)
+        self.conv3 = nn.Conv2d(6, 64, kernel_size=1, padding=0)
         self.res2 = residual_unit2(64, 128, stride=2)
         self.res3 = residual_unit2(128, 256, stride=2)
         self.res4 = residual_unit2(256, 512, stride=2)
