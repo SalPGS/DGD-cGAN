@@ -26,6 +26,7 @@ compared with the state-of-the-art methods on several widely available datasets.
 ###### Data preparation  
 We used TURBID dataset from Duarte et al.[<a href="http://amandaduarte.com.br/turbid/Turbid_Dataset.pdf" target="_blank">1</a>] available <a href="http://amandaduarte.com.br/turbid/ " target="_blank"> here </a>.
 We provide the TURBID images split into four equal sizes. The data is available for download <a href="https://drive.google.com/file/d/13yxI85JUdsbplM7-Hh8sywIXoom-6hZu/view?usp=sharing" target="_blank"> Ground Truth </a>, <a href="https://drive.google.com/file/d/1XZesr1UCuxnp0gQ3k5tESQd7tkHvCm6t/view?usp=sharing" target="_blank"> Underwater </a>, <a href="https://drive.google.com/file/d/1Nf9RJD5GhFBNhNcT0BGWBy7hB0cBoRFE/view?usp=sharing" target="_blank"> Transmission </a> and <a href="https://drive.google.com/file/d/1HifH7pv9NRrzwrwK9cv_axViOH-n1THJ/view?usp=sharing" target="_blank"> Scattered light </a> images. Test data is available inside the data folder: [Ground Truth](data/Test_groundtruth.zip) and [Underwater](data/Test_underwater.zip).
+Metrics are provided by Funie-GAN authors here: <a href="https://github.com/xahidbuffon/FUnIE-GAN/tree/master/Evaluation" target="_blank"> evaluation </a>.
 
 <br>
 
