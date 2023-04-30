@@ -86,6 +86,8 @@ class ResUnet1(nn.Module):
 
 #2nd GENERATOR G2
 
+#2nd GENERATOR G2
+
 class batchnorm_2(nn.Module):
     def __init__(self, in_c):
         super().__init__()
@@ -144,7 +146,7 @@ class ResUnet2(nn.Module):
         self.dec1 = decoder2(512, 256)
         self.dec2 = decoder2(256, 128)
         self.dec3 = decoder2(128, 64)
-        self.output = nn.Conv2d(64, 3, kernel_size=1, padding=0)
+        self.output = nn.Conv2d(64, 6, kernel_size=1, padding=0)
         self.sigmoid = nn.Sigmoid()
 
     def forward(self, inputs):
