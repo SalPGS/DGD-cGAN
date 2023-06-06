@@ -52,7 +52,8 @@ d=1
 
 for img in img_folder:
     img_test = transform(Image.open(img))
-    img_test = Variable(img_test).type(Tensor).unsqueeze(0)
+    dtype = torch.cuda.FloatTensor
+    img_test = img_test.type(dtype).unsqueeze(0)
     dewatered_img = G1(img_test).data 
     dewatered_sample = dewatered_img.data
     image_name = (img.split('.')[-2] +'_%d.jpg'%d)
