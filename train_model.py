@@ -105,7 +105,6 @@ class DGD_cGAN(nn.Module):
         
 epochs=850
 def train_model(model, train_data, epochs, display_every=16):
-    data = next(iter(test_data))
     G1L1_Loss = []
     G2L2_Loss = []
     for e in range(epochs):
