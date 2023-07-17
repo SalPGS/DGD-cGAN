@@ -102,9 +102,8 @@ class DGD_cGAN(nn.Module):
         self.backward_G()
         self.opt_Gens.step()
         
-        
-epochs=850
-def train_model(model, train_data, epochs, display_every=16):
+
+def train_model(model, train_data, epochs=850):
     G1L1_Loss = []
     G2L2_Loss = []
     for e in range(epochs):
@@ -120,7 +119,7 @@ def train_model(model, train_data, epochs, display_every=16):
             
 
             i += 1
-            if i % display_every == 0:
+            if i % 16 == 0:
                 print(f"\nEpoch {e+1}/{epochs}")
                 print(f"Iteration {i}/{len(train_data)}")
                 loss_results(loss_meter_dict) 
@@ -128,4 +127,4 @@ def train_model(model, train_data, epochs, display_every=16):
         
 
 model = DGD_cGAN()
-train_model(model, train_data, epochs)
+train_model(model, train_data)
