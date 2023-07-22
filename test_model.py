@@ -14,7 +14,6 @@ from torch.autograd import Variable
 from nets.networks_Dgd import ResUnet1, ResUnet2, PatchDiscriminator
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-Tensor = torch.cuda.FloatTensor if device else torch.FloatTensor 
 
 G1 = ResUnet1().to(device)
 G2 = ResUnet2().to(device)
@@ -41,25 +40,24 @@ G1.eval()
 D.eval()
 
 #Data transform
-img_size, channels = 256,  3
-transforms_ = [transforms.Resize((img_size, img_size), transforms.InterpolationMode.BICUBIC),
-               transforms.ToTensor(),]
-transform = transforms.Compose(transforms_)
+transform = transforms.Compose([transforms.Resize((256, 256), transforms.InterpolationMode.BICUBIC)])
+
 
 ## testing 
-times = []
+count = []
 d=1
 
 for img in img_folder:
     img_test = transform(Image.open(img))
-    dtype = torch.cuda.FloatTensor
-    img_test = img_test.type(dtype).unsqueeze(0)
-    dewatered_img = G1(img_test).data 
-    dewatered_sample = dewatered_img.data
+    img_test = transforms.ToTensor()(img_test)
+    input = img_test.unsqueeze_(0)
+    input = input.to(device)
+    dewatered_img = G1(input)
+    dewatered_sample = dewatered_img
     image_name = (img.split('.')[-2] +'_%d.jpg'%d)
     file_path = os.path.join(output_dir, image_name)
     save_image(dewatered_sample, file_path, normalize=True)
     d+=1
     
-if (len(times) > 1):
+if (len(count) > 1):
     print ("Total imgs: %d" % len(img_folder)) 
