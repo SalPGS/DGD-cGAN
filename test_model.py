@@ -50,9 +50,9 @@ d=1
 for img in img_folder:
     img_test = transform(Image.open(img))
     img_test = transforms.ToTensor()(img_test)
-    input = img_test.unsqueeze_(0)
-    input = input.to(device)
-    dewatered_img = G1(input)
+    input_img = img_test.unsqueeze_(0)
+    input_img = input_img.to(device)
+    dewatered_img = G1(input_img)
     dewatered_sample = dewatered_img
     image_name = (img.split('.')[-2] +'_%d.jpg'%d)
     file_path = os.path.join(output_dir, image_name)
