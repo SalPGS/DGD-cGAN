@@ -2,7 +2,7 @@
 
 This repository contains Pytorch implementation of the paper **"DGD-cGAN: A Dual Generator for Image Dewatering and Restoration"**.
 <ul>
-  <li> Paper: </li>
+  <li> Paper: https://www.sciencedirect.com/science/article/abs/pii/S0031320323008567 </li>
   <li> Preprint: https://arxiv.org/abs/2211.10026
       </ul>
 <br>
