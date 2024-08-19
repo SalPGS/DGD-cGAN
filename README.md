@@ -1,3 +1,4 @@
+To access the code and dataset for our new work (Scene-cGAN and Aqua-Depth) under review, please go to https://github.com/SalPGS/Scene-cGAN.
 # DGD-cGAN: A Dual Generator for Image Dewatering and Restoration
 
 This repository contains Pytorch implementation of the paper **"DGD-cGAN: A Dual Generator for Image Dewatering and Restoration"**.
